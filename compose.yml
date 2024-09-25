@@ -1,0 +1,18 @@
+services:
+  api:
+    build:
+      dockerfile: ./build/Dockerfile
+      context: ./Spino-Cup-Back/
+    ports:
+      - "1323:1323"
+    env_file:
+      - .env
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./Spino-Cup-Front/dist:/usr/share/nginx/dist
