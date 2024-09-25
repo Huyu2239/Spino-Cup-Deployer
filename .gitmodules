@@ -1,0 +1,6 @@
+[submodule "Spino-Cup-Back"]
+	path = Spino-Cup-Back
+	url = git@github.com:Huyu2239/Spino-Cup-Back.git
+[submodule "Spino-Cup-Front"]
+	path = Spino-Cup-Front
+	url = git@github.com:Huyu2239/Spino-Cup-Front.git
